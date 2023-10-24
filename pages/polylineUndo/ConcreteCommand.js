@@ -5,12 +5,12 @@ class ConcreteCommand {
     }
 
     execute() {
-        _dessin.add(line);
+        this._dessin.add(this._line);
     }
 
     undo() {
-        _line.remove();
+        this._line.remove();
     }
 }
 
-export default Stack;
+export default ConcreteCommand;
